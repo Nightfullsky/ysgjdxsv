@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Milk Tea Gallery</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+    /* Resetting default browser styles */
+body, h1, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+
+.image-container {
+    width: 200px;
+    margin: 10px;
+}
+
+.image-container img {
+    max-width: 100%;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+</style>
+<body>
+    <header>
+        <h1>Milk Tea Gallery</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section class="gallery">
+        <div class="image-container">
+            <img src="Caramel-Milk-Tea-2.jpg" alt="Milk Tea 1">
+            <h1>CARAMEL</h1>
+            <p>The addition of vegan caramel sauce adds a rich flavor that complements black tea unbelievably well!</p>
+        </div>
+        <div class="image-container">
+            <img src="1.jpg" alt="Milk Tea 2">
+            <h1>STRAWBERRY</h1>
+            <p>Gong cha's Strawberry Green Milk Tea is a delicious and refreshing beverage that combines the earthy taste of green tea with the sweetness of strawberries and milk.</p>
+        </div>
+        <div class="image-container">
+            <img src="2.webp" alt="Milk Tea 3">
+            <h1>PANDA</h1>
+            <p>Chains like Gong Cha & T4 have a Panda Milk Tea - it's generally a black or green milk tea with both black (tapioca) pearls, and white (agar) pearls.</p>
+        </div>
+        <div class="image-container">
+            <img src="3.jpg" alt="Milk Tea 4">
+            <h1>COCONUT</h1>
+            <p>Turns out, it's pretty simple! Just powdered coconut milk, green tea, sugar, and cream!</p>
+        </div>
+        <div class="image-container">
+            <img src="4.avif" alt="Milk Tea 5">
+            <h1>MATCHA</h1>
+            <p>Matcha it's a powder made from high-quality green tea leaves originating from China. Its taste is umami, a bit bitterish, slightly astringent, with earthy nuttiness and a few grassy notes. This unique combination of flavors makes it a #1 fan favorite for many.</p>
+        </div>
+        <!-- Add more image containers for each picture -->
+        <!-- Example: -->
+        <!-- <div class="image-container">
+            <img src="milktea3.jpg" alt="Milk Tea 3">
+        </div> -->
+    </section>
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Have a question or just want to say hello? Reach out to us!</p>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text"id="Name" name="Name" required>
+            <label for="email">Email:</label>
+            <input type="email"id="email" name="email" required>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+            <button type="submit">Send</button>
+        </form>
+    </section>
+    <footer>
+        <p>&copy; 2024 Milk Tea Gallery. All rights reserved.</p>
+    </footer>
+</body>
+</html>
